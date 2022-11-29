@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Plantillapaginas.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+	<meta charset="utf-8">
+    
+    <script language="javascript" src="jquery-1.3.min.js"></script>
+<script language="javascript">
+
+$(document).ready(function() {
+
+$.ajaxSetup({'beforeSend' : function(xhr) {
+
+try {
+
+//FF & Chrome
+
+xhr.overrideMimeType('text/html; charset=utf-8');
+
+} catch (e) {
+
+//IE8
+
+xhr.setRequestHeader("contentType","text/html; charset=utf-8");
+
+}
+
+}//end function
+
+});//ajaxSetup
+
+					   
+    $().ajaxStart(function() {
+        $('#loading').show();
+        $('#result').hide();
+    }).ajaxStop(function() {
+        $('#loading').hide();
+        $('#result').fadeIn('slow');
+    });
+    $('#form1, #enviar, #enviar').submit(function() {
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            success: function(data) {
+                $('#result').html(data);
+
+            }
+        })
+        
+        return false;
+    }); 
+})
+</script>
+
+    
+    
+    
+	
+	<title>Duosolutions</title>
+	
+	<link rel="stylesheet" href="global.css">
+	<SCRIPT type=text/javascript src="centrar.js"></SCRIPT>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'imagenes/loading.gif',
+				play: 4000,
+				pause: 2500,
+				hoverPause: true
+			});
+		});
+	</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Disco plus</title>
+<!-- InstanceEndEditable -->
+
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<link href="global.css" rel="stylesheet" type="text/css" />
+<link href="estilospag.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>                                   
+<div id="pagina">
+  <div id="cabecera">
+  	<div id="logo">
+    	<a href="index.html"><img src="imagenes/logoduo.png" width="180" alt="logo" /></a>    
+    </div>
+  </div>
+    <div id="main">
+        	<div id="menu"><!-- InstanceBeginEditable name="Region botones" -->
+           	  <div id="titulomenuproducto"><p class="titulomenu">PRODUCTOS</p></div>
+              <div class="botonproductos" id="botonproductos"><a href="brocas.html"><p class="textomenu">Brocas</p></a>
+              </div>
+              <div class="botonproductos" id="botonproductos"><a href="coronas.html"><p class="textomenu">Coronas</p></a>
+              </div>
+              <div class="botonproductos" id="botonproductosactivo"><a href="discos.html"><p class="textomenu">Discos</p></a>
+              </div>
+              <div class="botonproductosabajo" id="botonproductosabajo">
+              <a href="http://www.armeg.co.uk" target="_blank"><p class="textomenu">
+              Más productos</p></a></div>
+              
+              <div id="titulomenuempresa"><p class="titulomenu">EMPRESA</p></div>
+              <div class="botonproductos" id="botonproductos"><a href="quienes.html"><p class="textomenu">Quienes somos</p></a>
+              </div>
+              <div class="botonproductosabajo" id="botonproductosabajo"><a href="contacta.html"><p class="textomenu">Contacta
+              </p><p>&nbsp;</p></a></div>
+              
+              <div class="botonferias" id="botonferias">
+              <a href="http://www.youtube.com/results?search_query=armeg" target="_blank">
+              <p class="textomenuferias">Videos</p></a>
+              </div>
+              <div class="botonformacion" id="botonformacion"><a href="formacion.html"><p class="textomenuformacion">Formacion</p>
+              </a></div>
+              <div class="botonexpositores" id="botonexpositores"><a href="expositores.html">
+              <p class="textomenuexpositores">Expositores</p></a></div>
+              
+              <div class="botoncatalogo" id="botoncatalogo"><a href="Catalogo.pdf"></a>
+              </div>
+              <!-- InstanceEndEditable -->
+            </div>
+<div id="contenedor">
+            	<div id="contenidosinmenu">
+                  <!-- InstanceBeginEditable name="Regioncontenido" -->
+                  <img class="imagenmarca1" src="imagenes/logoduodisk.png" width="95px" alt="duodisk"/>
+                   <div id="titulobrocas">
+                  	<p class="titulobrocas">PORCELÁNICO PLUS</p>
+                  	<p class="textobrocas">Con los discos de corte Duo Disk, podrá solucinar 
+                    todos aquellos problemas de corte que se le planteen.
+                  </div>
+                  <div id="frameizquierdabrocas">
+                  	<div id="frameizquierdabrocasimagen">
+                    	<img src="imagenes/discoplus.png" width="214" alt="discoplus"/>
+                        <div id="tablabrocas">
+                        	<table width="250" height="111" border="0" cellspacing="0" 
+                            bordercolor="#ffffff"                  
+                              <tr>
+                    			<td height="44" colspan="4"><div align="center" 
+                                class="titulotablabrocas">MEDIDAS/DIÁMETRO
+                                </div>                                </td>
+                  			  </tr>
+                  			  <tr>
+                    			<td width="62" height="33">
+                                <div align="center" class="textotablabrocas">
+                                115.0 mm                                </div>                                </td>
+                                <td width="62" height="33">
+                                <div align="center" class="textotablabrocas">
+                                115.0 mm*                                </div>                                </td>
+                                <td width="62" height="33">
+                                <div align="center" class="textotablabrocas">
+                                180.0 mm                                </div>                                </td>
+                                <td width="62" height="33">
+                                <div align="center" class="textotablabrocas">
+                                200.0 mm                                </div>                                </td>
+                              	</tr>
+                              <tr>
+                                <td width="62" height="33">
+                                <div align="center" class="textotablabrocas">                              
+                                230.0 mm								</div>                                </td>
+                                <td width="62" height="33">
+                                <div align="center" class="textotablabrocas">
+                                * reforzado
+                                </div>                                </td>
+                                <td width="62" height="33">
+                                <div align="center" class="textotablabrocas">
+                                </div>                                </td>
+                                <td width="62" height="33">
+                                <div align="center" class="textotablabrocas">
+                                </div>                                </td>
+                              </tr>
+                		</table>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="framederechabrocas">
+                  	<p class="titulocontenido">USOS Y APLICACIONES:</p>
+                  	<p>Tanto el Porcelánico PLUS, Basic ó ECO están recomendados para porcelánico, 
+                    azulejo, gres, granito, pizarra o mármol. En cambio, el Gres EXTRUSIONADO está 
+                    recomendado para todo tipo de gres y general de obra.<br /><br />
+                    Este disco es el más alto de la gama.<br /><br />
+                    Tiene un espesor  de 1,2 mm.<br /><br />
+                    Altura del segmento de 8 mm.<br /><br />
+                    Corte en seco.<br /><br />
+                    Recomendado por ser de alta duración.
+                  	</p>
+                    				  
+				  <!-- InstanceEndEditable -->                
+              	</div>
+                <div id="logos">
+                	<img class="logos" src="imagenes/logomultiduo.png" width="90" alt="multiduo">
+                    <img class="logos" src="imagenes/logoptc.png" width="50" alt="ptc">
+                    <img class="logos" src="imagenes/logoqfdf.png" width="50" alt="qfdf">
+                    <img class="logos" src="imagenes/logoflecha.png" width="110" alt="flecha">
+                    <img class="logos" src="imagenes/logoduodry.png" width="90" alt="duodry">                    
+                    <img class="logos" src="imagenes/logorebar.png" width="90" alt="rebar1">
+                    <img class="logos" src="imagenes/logoarmeg.png" width="80" alt="armeg">
+                    <img class="logos" src="imagenes/logoduodisk.png" width="85" alt="duodisk">
+              	</div>
+   	  		</div>
+ 	</div>   
+  <div id="pie">
+  	<p class="textopie"><strong>DUO SOLUTIONS&nbsp&nbsp&nbsp&nbsp Tel.+34 964 246 950&nbsp&nbsp&nbsp&nbsp comercial@duosolutions.es
+    </strong></p> 	
+  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
+
+<!-- Localized -->

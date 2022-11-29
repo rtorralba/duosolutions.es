@@ -1,0 +1,489 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  ------PLANTILLAS ----------------------------------------------------------*/
+*{
+	padding-bottom:0px;
+	margin:0px;
+	padding-left:0px;
+	padding-left:0px;
+	padding-top:0px;
+}
+
+body {
+	background-color: #c6c6c6;
+	color: #353635;
+	font-family:Century Gothic, Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	padding: 0;
+	width: 962px;
+	margin:10px auto;	
+	background-position: center;
+}
+body a:hover{
+	text-decoration:none;
+}
+
+#logo {
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 168px;
+	display:block;
+	margin-top:20px;
+	margin-left:20px;
+}
+
+/*para que no salga el borde en el explorer a los vinculos*/
+body a img
+{
+	border-style: none none none none;
+}
+
+body a:hover{
+	color:#FFFFFF;
+}
+#pagina {
+	float: left;
+	height: 700px;
+	width: 962px;
+	background-color: #000000;
+	margin-top: 10px;
+	position:absolute;
+	visibility:hidden;
+}
+#cabecera {
+	background-image: url(imagenes/fondocabecera.jpg);
+	float: left;
+	height: 115px;
+	width: 962px;
+	background-repeat: no-repeat;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+#contenedor {
+	background-color: #000000;
+	float:left;
+	height:558px;
+	width: 778px;
+}
+#submenu {
+	background-color: #80857a;
+	float: left;
+	height: 38px;
+	width: 767px;
+	top: 11px;
+	margin-top: 11px;
+	margin-left: 11px;
+	border-radius:10px 0px 0px 0px;
+}
+#contenidosinmenu {
+	float: left;
+	height: 471px;
+	width: 767px;
+	background-color: #d2ccca;
+	background-image:url(imagenes/fondodegradadorojonegro.png);
+	margin-left:11px;
+	margin-top:10px;
+	background-repeat: no-repeat;
+}
+#contenido {
+	float: left;
+	height: 433px;
+	width: 767px;
+	background-color: #d2ccca;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	background-image:url(fondodegradadorojonegro.jpg);
+	margin-left:11px;
+}
+#logos {
+	background-color:#000000;
+	clear: both;
+	float: left;
+	height: 65px;
+	width: 759px;
+	margin-left: 8px;
+	margin-bottom: 11px;
+	margin-top: 0px;
+	text-align:center;
+}
+.logos{
+	position:relative;
+	display:inline;
+	vertical-align:middle;
+	top:20px;
+	margin-right: 10px;
+	}
+
+#menu {
+	float: left;
+	height: 536px;
+	width: 184px;
+	background-color: #000000;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+
+#main {
+	background-color: #000000;
+	height: 558px;
+	width: 962px;
+	float: left;
+}
+
+#pie {
+	background-color: #df3b22;
+	background-image: url(imagenes/fondopie.jpg);
+	float: left;
+	height: 27px;
+	width: 962px;
+	background-repeat: no-repeat;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+}
+.textopie{
+	font-family:Century Gothic, Arial, Helvetica, sans-serif;;
+	color:#FFFFFF;
+	font-size:12px;
+	text-align:center;
+	margin-top:5px;
+	opacity:0.5;
+	filer:(opacity=50);
+	letter-spacing: 0.12em;
+}
+ 
+#submenu2 {
+	float: left;
+	height: 60px;
+	width: 170px;
+	margin-top:10px;
+	margin-bottom: 5px;
+	background-repeat: no-repeat;
+}
+#titulomenuproducto {
+	height: 51px;
+	width: 162px;
+	background-image: url(imagenes/fondotitulomenu.png);
+	background-repeat: no-repeat;
+	margin-left: 17px;
+	float:left;
+	display:block;
+}
+#titulomenuempresa {
+	height: 51px;
+	width: 162px;
+	background-image: url(imagenes/fondotitulomenu.png);
+	background-repeat: no-repeat;
+	margin-left: 17px;
+	float:left;
+	display:block;
+	margin-top:10px;
+}
+.titulomenu{
+	font-size:18px;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding-left:25px;
+	padding-top:13px;
+	}
+	
+.textomenu{
+	font-size:16px;
+	padding-left:25px;
+	padding-top:4px;	
+	color:#FFFFFF
+	}
+
+#botonproductos {
+	height: 38px;
+	width: 162px;
+	margin-left: 17px;
+	color:#FFFFFF;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonproductos.png);
+}
+.botonproductos a{
+	color:#FFFFFF;
+	height: 38px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+}
+
+.botonproductos a:hover{
+	height: 38px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonproductoshover.png);
+}
+
+#botonproductosabajo {
+	height: 38px;
+	width: 162px;
+	margin-left: 17px;
+	color:#FFFFFF;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonproductosabajo.png);
+}
+.botonproductosabajo a{
+	color:#FFFFFF;
+	height: 38px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+}
+
+.botonproductosabajo a:hover{
+	height: 38px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonproductosabajohover.png);
+}
+
+#botonferias {
+	height: 41px;
+	width: 162px;
+	margin-left: 17px;
+	color:#FFFFFF;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonferia.png);
+	margin-top:10px;
+}
+.botonferias a{
+	color:#FFFFFF;
+	height: 41px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+}
+
+.botonferias a:hover{
+	height: 41px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonferiahover.png);
+}
+.textomenuferias{
+	font-size:16px;
+	padding-left:25px;
+	padding-top:15px;	
+	color:#FFFFFF
+	}
+
+#botonformacion {
+	height: 38px;
+	width: 163px;
+	margin-left: 16px;
+	color:#FFFFFF;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonfornacion.png);
+}
+.botonformacion a{
+	color:#FFFFFF;
+	height: 38px;
+	width: 163px;
+	clear:both;
+	float:left;
+	display:block;
+}
+
+.botonformacion a:hover{
+	height: 38px;
+	width: 163px;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonfornacionhover.png);
+}
+.textomenuformacion{
+	font-size:16px;
+	padding-left:25px;
+	padding-top:7px;	
+	color:#FFFFFF
+	}
+#botonexpositores {
+	height: 41px;
+	width: 162px;
+	margin-left: 17px;
+	color:#FFFFFF;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonexpositores.png);
+}
+.botonexpositores a{
+	color:#FFFFFF;
+	height: 41px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+}
+
+.botonexpositores a:hover{
+	height: 41px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+	background-image:url(imagenes/botonexpositoreshover.png);
+}
+.textomenuexpositores{
+	font-size:16px;
+	padding-left:25px;
+	padding-top:3px;	
+	color:#FFFFFF
+}
+
+#botoncatalogo {
+	height: 60px;
+	width: 162px;
+	margin-top:10px;
+	margin-left: 17px;
+	color:#FFFFFF;
+	clear:both;
+	float:left;
+	display:block;
+	background-repeat:no-repeat;
+	background-image:url(imagenes/fondotextocatalogo.png);
+}
+.botoncatalogo a{
+	color:#FFFFFF;
+	height: 60px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+}
+
+.botoncatalogo a:hover{
+	height: 60px;
+	width: 162px;
+	clear:both;
+	float:left;
+	display:block;
+	background-repeat:no-repeat;
+	background-image:url(imagenes/fondotextocatalogohover.png);
+}
+
+.textomenucatalogoexpositores {
+	font-family:Century Gothic, Arial, Helvetica, sans-serif;;
+	font-size:14px;
+	color:#ffffff;
+	margin-left:17px;
+	opacity:0.7;
+	filter:alpha (opacity=70);
+}
+.textomenucatalogoexpositoresnegrita {
+	font-family:Century Gothic, Arial, Helvetica, sans-serif;;
+	font-size:14px;
+	color:#ffffff;
+	margin-top:6px;
+	margin-left:20px;
+	opacity:0.7;
+	filter:alpha (opacity=70);
+	font-weight:bolder;
+}
+.textomenunegrita {
+	font-family:Century Gothic, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#ffffff;
+	margin-top:15px;
+	margin-left:30px;
+	opacity:0.7;
+	filter:alpha (opacity=70);
+	font-weight:bolder;	
+}
+/*  ------NUESTRA HISTORIA ----------------------------------------------------------*/
+
+
+/*  ------EQUIPO ----------------------------------------------------------*/
+
+
+/*  ------RECONOCIMIENTOS ----------------------------------------------------------*/
+
+
+/*  ------BROCAS ----------------------------------------------------------*/
+
+
+/*  ------CORONAS ----------------------------------------------------------*/
+
+
+/*  ------KITS ----------------------------------------------------------*/
+
+
+/*  ------CEVISAMA ----------------------------------------------------------*/
+
+
+/*  ------CONSTRUMAT ----------------------------------------------------------*/
+
+
+/*  ------FORMACION ----------------------------------------------------------*/
+#tituloformacion {
+	height: 70px;
+	width: 767px;	
+}
+.tituloformacion {
+	font-family: Century Gothic, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 40px;
+	text-decoration: underline;
+}
+#imagenformacion{
+	width:778;
+	position:absolute;
+	right:375px;	
+}
+
+/*  ------CATALOGO ----------------------------------------------------------*/
+#titulocatalogo {
+	height: 70px;
+	width: 767px;	
+}
+.titulocatalogo {
+	font-family: Century Gothic, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 40px;
+	text-decoration: underline;
+	letter-spacing: 0.12em;
+}
+#imagencatalogo{
+	width:778;
+	position:absolute;
+	right:450px;	
+}
+.textodescarga{
+	color:#FFFFFF;
+	text-align:center;
+	font-size:10px;
+	font-style: italic;
+}
+
+/*  ------EXPOSITORES ----------------------------------------------------------*/
